@@ -8,6 +8,11 @@
             {{ $bookcategories->first()->category->name }} category
             currently...</h1>
     @else
+        <div class="container">
+            <h3 class="text-center mt-5" style="color:steelblue; font-family: 'Silkscreen', cursive">
+                {{ $bookcategories->first()->category->name }}
+            </h3>
+        </div>
         <div class="container mt-4">
             <div class="row d-flex justify-content-around">
                 @foreach ($bookcategories as $bookcat)
